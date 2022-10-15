@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <time.h>
 /**
  * main - Prints if the numberis positive, negative or 0
  * Return: Always
@@ -21,7 +22,7 @@ int main(void)
 	}
 	else
 	{
-		printf("%d is negative\n", n)
+		printf("%d is negative\n", n);
 	}
 
 	return (0);
