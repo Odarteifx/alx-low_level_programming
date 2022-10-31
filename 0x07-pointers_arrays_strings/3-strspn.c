@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 /**
  *  _strspn - gets the lenght
  *  @s: The string to be searched.
