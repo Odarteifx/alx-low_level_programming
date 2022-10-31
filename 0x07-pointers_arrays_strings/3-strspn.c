@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  *  _strspn - gets the lenght
  *  @s: The string to be searched.
@@ -21,7 +22,7 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			}
 			else if (accept[index + 1] == "\0")
-				return(bytes)
+				return(bytes);
 		}
 		s++;
 	}
