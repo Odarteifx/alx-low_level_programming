@@ -1,6 +1,6 @@
 #include "main.h"
 
-int check_prime(int num, int div);
+int check_prime(int n, int div);
 int is_prime_number(int n);
 
 /**
@@ -10,26 +10,26 @@ int is_prime_number(int n);
  */
 int is_prime_number(int n);
 {
-	return (check_prime(num, 1));
+	return (check_prime(n, 1));
 }
 
 /**
  * check_prime - Checks if a number is divisible
- * @num: The number to be checked
+ * @n: The number to be checked
  * @div: The divisor
  * Return: If the number is divisible - 0
  * If the number is not divisible - 1
  */
-int check_prime(int num, int div)
+int check_prime(int n, int div)
 {
-	if (num <= 1)
+	if (n <= 1)
 		return (0);
 
-	if (num % div == 0 && div > 1)
+	if (n % div == 0 && div > 1)
 		return (0);
 
-	if ((num / div) < div)
+	if ((n / div) < div)
 		return (1);
 
-	return (check_prime(num, div + 1));
+	return (check_prime(n, div + 1));
 }
