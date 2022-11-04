@@ -1,12 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - passes argc and argv
+ * character_num - passes argc and argv
  * @argc: argument count
- * @argv: argument vector
  * Return: Always 0
  */
-int main(int argc, char *argv[])
+int character_num(int argc)
 {
 	printf("%d\n", argc);
 
